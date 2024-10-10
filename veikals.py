@@ -104,7 +104,7 @@ class App:
 
         produkts = Product(name, price, quantity)
         self.cart.add_product_to_cart(produkts)
-        self.cart_listbox.insert(tk.END, f"Produkts: {name} Cena: {price} EUR Daudzums: {quantity} gab")
+        self.cart_listbox.insert(tk.END, f"Produkts: {name} | Cena: {price} | EUR Daudzums: {quantity} gab")
 
         self.name_entry.delete(0, tk.END)
         self.price_entry.delete(0, tk.END)
