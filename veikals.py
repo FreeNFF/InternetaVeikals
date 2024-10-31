@@ -104,7 +104,7 @@ class App:
 
         produkts = Product(name, price, quantity)
         self.cart.add_product_to_cart(produkts)
-        self.cart_listbox.insert(tk.END, f"Produkts: {name} | Cena: {price} | EUR Daudzums: {quantity} gab")
+        self.cart_listbox.insert(tk.END, f"Produkts: {name} | Cena: {price} EUR | Daudzums: {quantity} gab")
 
         self.name_entry.delete(0, tk.END)
         self.price_entry.delete(0, tk.END)
@@ -120,12 +120,6 @@ class App:
         self.cart.remove_product_to_cart()
         self.cart_listbox.delete(0, tk.END)
         self.total_label.config(text='Kopējā cena: 0.00 EUR')
-
-
-
-    
-
-
 
 
 if __name__ == '__main__':
